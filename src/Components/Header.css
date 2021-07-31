@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    width: auto;
+}
+
+.Hero{
+    height: 120vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+.navbar{
+    display: flex;
+    /* justify-content:flex-end; */
+    flex-direction: row;
+}
+
+.navbar .buttons-list{
+    position: relative;
+    /* justify-content: flex-start; */
+    /* float: left; */
+}
+
+.navbar .buttons2-list{
+    position: relative;
+    float: right;
+    /* justify-content: flex-start; */
+    /* margin-right: 0; */
+    left: 800px;
+}
+
+@media (max-width:500px){
+    .navbar .buttons2-list{
+        left:0;
+    }
+
+    .navbar .buttons-list{
+        left: 0;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .frame{
+        display: flex;
+        flex-direction:column ;
+    }
+
+    .illuimag{
+        height: 400px;
+        width: 500px;
+    }
+
+    .Hero{
+        height: 200vh;
+    }
+
+    .text{
+        position: relative;
+        left: 300px;
+        top: 380px;
+    }
+
+    .text .More{
+       font-size: 50px;
+       max-width: 200px; 
+    }
+    
+}
+
+.buttons-list{
+    display: inline-flex;
+}
+
+.buttons-list li a{
+    color: 	#bfbfbf;
+    padding: 15px;
+}
+
+.buttons2-list{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar li{
+    padding-top: 5px;
+}
+
+.buttons2-list li a{
+    padding: 0 15px;
+    color:#bfbfbf;
+}
+
+.sign{
+    color: black;
+    height: 25px;
+    width: 104px;
+    border-radius: 20px;
+    background-color: #2acfcf;
+    text-align: center;
+    font-size: 15px;
+}
+
+.buttons2-list .sign a{
+    color: white;
+    /* text-align: center; */
+}
+
+.nav-link:hover{
+    color: black;
+    transition: linear 0.6s all;
+}
+
+
+
+/* Middle Part Starts */
+
+.frame{
+    display:flex;
+    flex-direction:row-reverse;
+    position: relative;
+    margin: auto;
+    left: 70px;
+    top: 70px;
+    max-width: 85vw;
+}
+
+.frame .text li{
+    height: 30px;
+    width: 130px;
+    background-color: #2acfcf;
+    text-align: center;
+    padding: 10px;
+    /* font-size: 17px; */
+    border-radius: 30px;
+}
+
+.frame .text li a{
+    color: white;   
+}
+
+
+.text{
+    max-width: 40vw;
+}
+
+.More{
+    font-size: 70px;
+}
+
+.below{
+    max-width: 500px;
+    color: #bfbfbf;
+    position: relative;
+    top: -30px;
+    font-size: 17px;
+}
+
+/* Media Queries */
+
+
+
+
+
+
+
+/* Navbar */
+
