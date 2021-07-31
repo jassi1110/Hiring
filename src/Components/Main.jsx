@@ -14,9 +14,26 @@ export default function Main(props) {
         document.body.appendChild(el);
         el.select();
         document.execCommand('copy');
-        document.body.removeChild(el);
+        document.body.removeChild(el); 
+      }
 
-        
+    const  styling = {
+        backgroundColor: "#2acfcf",
+        height: "30px",
+        width: "70px",
+        position: "relative",
+        float: "right",
+        margin: "auto",
+        borderRadius: "10px",
+        color: "white",
+        border: "none",
+        cursor: "pointer"
+    }
+
+      function change(){
+          return (
+            <button className="copy-button" style={styling}>Copied</button>
+          )
       }
 
     
@@ -32,12 +49,30 @@ export default function Main(props) {
           }
       }
 
+      function error(){
+          return(
+              <>
+            <input className="error" type="text" name="link" placeholder="Shorten a link here..." style={mystyle}/>
+              <span style={{color:"red" , position:"relative" , top:"42px" , right:"580px" }}>Insert a link here!</span>
+          </>
+          )
+      }
+
+      const mystyle = {
+        height:"45px",
+        width: "570px",
+        borderRadius: "10px",
+        fontSize: "15px",
+        left: "20px",
+        border:"3px solid red",
+      };
+
     return (
         <section id="Hero2">
                 <div className="url-shorter">
                     <form onSubmit={props.getlink}>
-                        <input className="text-short" type="text" id="link" name="link" placeholder="Shorten a link here..."/>
-                        <button className="shorten" type="submit">shorten It!</button>
+                        {props.error ? error(): (<input className="text-short" type="text"  name="link" placeholder="Shorten a link here..."/>) }
+                        {props.error ? (<button className="shorten" type="submit" style={{ top:"-52px", height: "50px",width: "181px",borderRadius:"10px",position: "relative",left: "600px",backgroundColor: "#2acfcf",color: "white",border: "none",cursor: "pointer"}}>shorten It!</button>)  : (<button className="shorten" type="submit">shorten It!</button>)}
                     </form>
                 </div>
                 {show(props.Original_link , props.short_link)}

@@ -36,7 +36,7 @@
 
 .shorten{
     height: 50px;
-    width: 120px;
+    width: 180px;
     border-radius:10px;
     position: relative;
     left: 25px;
@@ -90,13 +90,11 @@ form{
     float: right;
     margin: auto;
     border-radius: 10px;
-    /* padding-right: 20px; */
-    /* right: 20px; */
     color: white;
-    /* top: 11px;  */
     border: none;
     cursor: pointer;
 }
+
 .copied-button{
     background-color: #232127;
     height: 30px;
@@ -147,6 +145,15 @@ form{
         border-radius: 10px;
         font-size: 12px;
         left: 20px;
+        
+    }
+    .error{
+        height:30px;
+        width: 400px;
+        border-radius: 10px;
+        font-size: 12px;
+        left: 20px;
+        border: 1px solid red;
         
     }
     

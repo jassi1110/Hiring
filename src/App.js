@@ -11,7 +11,7 @@ class App extends React.Component{
     this.state = {
         Original_link:undefined,
         short_link:undefined,
-        error:false
+        error:false,
     }
   }
 
